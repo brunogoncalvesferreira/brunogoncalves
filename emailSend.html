@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email enviado</title>
+  </head>
+  <style>
+    :root {
+      --hue--: 150;
+      --green-light--: hsl(var(--hue--), 100%, 44%);
+      --white--: hsl(var(--hue--), 0%, 98%);
+      --gray-200--: hsl(var(--hue--), 0%, 20%);
+      --gray--: hsl(var(--hue--), 0%, 51%);
+      --gray-400--: hsl(var(--hue--), 0%, 13%);
+      --dark--: hsl(var(--hue--), 0%, 9%);
+    }
+    body {
+      background-color: var(--dark--);
+    }
+
+    .email svg path {
+      stroke: var(--green-light--);
+    }
+    .email {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10rem;
+      margin-inline: auto;
+
+      border: 2px solid var(--green-light--);
+
+      padding: 2rem;
+
+      text-align: center;
+
+      width: 400px;
+
+      color: white;
+
+      font-family: 'roboto';
+    }
+
+    button {
+      width: 150px;
+      height: 30px;
+
+      border: none;
+      border-radius: 10px;
+
+      background: var(--green-light--);
+
+      font-size: 1rem;
+      font-family: 'roboto';
+      font-weight: 500;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    footer {
+      text-align: center;
+
+      margin-top: 5rem;
+
+      font-family: 'roboto';
+      font-size: 0.8rem;
+
+      color: white;
+    }
+  </style>
+  <body>
+    <section class="email">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4.00012 4.00006H20.0001C21.1001 4.00006 22.0001 4.90006 22.0001 6.00006V18.0001C22.0001 19.1001 21.1001 20.0001 20.0001 20.0001H4.00012C2.90012 20.0001 2.00012 19.1001 2.00012 18.0001V6.00006C2.00012 4.90006 2.90012 4.00006 4.00012 4.00006Z"
+          stroke="#00DF5E"
+          stroke-width="1.47675"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M22.0002 5.99951L12.0002 12.9995L2.00024 5.99951"
+          stroke="#00DF5E"
+          stroke-width="1.47675"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <p>Email enviado com sucesso!</p>
+      <p>Obrigado pela sua mensagem, breve entraremos em contato.</p>
+
+      <button><a href="./index.html">Voltar a página</a></button>
+    </section>
+
+    <footer>
+      <p>
+        Desenvolvido pelo <span>Bruno Gonçalves Ferreira </span> &COPY; 2022
+      </p>
+      <p>Todos direitos reservados</p>
+    </footer>
+  </body>
+</html>

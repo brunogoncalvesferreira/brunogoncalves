@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Biblioteca ScrollReveal deixando os elementos animados a medida que entram e saem da janela de visualização-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Styles CSS-->
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body onscroll="onScroll()">
+    <!--Header - Cabeçalho -->
+    <header id="header">
+      <nav id="navigation">
+        <div class="wrapper">
+          <a class="logo" href="#">Bruno</a>
+
+          <button onclick="openMenu()" class="open-mobile">
+            <svg
+              width="28"
+              height="11"
+              viewBox="0 0 28 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="28" height="1" fill="white" />
+              <rect y="5" width="28" height="1" fill="white" />
+              <rect x="14" y="10" width="14" height="1" fill="white" />
+            </svg>
+          </button>
+
+          <div class="menu">
+            <ul>
+              <li><a onclick="closeMenu()" href="#home">Home</a></li>
+              <li><a onclick="closeMenu()" href="#about">Sobre mim</a></li>
+              <li><a onclick="closeMenu()" href="#skills">Skills</a></li>
+              <li><a onclick="closeMenu()" href="#project">Projetos</a></li>
+              <li><a onclick="closeMenu()" href="#service">Serviços</a></li>
+              <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
+            </ul>
+
+            <button onclick="closeMenu()" class="close-mobile">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="25"
+                height="25"
+                viewBox="0 0 50 50"
+                style="fill: #fff"
+              >
+                <path
+                  d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Section - Home-->
+    <section id="home">
+      <div class="wrapper">
+        <div class="col-a">
+          <h1>Oi, eu sou o Bruno Gonçalves</h1>
+          <p>
+            Desenvolvedor Front-End<br />
+            Acredito que com a tecnologia podemos melhorar a vida das pessoas.
+          </p>
+
+          <div class="contact">
+            <a
+              class="button-curriculum"
+              href="./doc/Bruno Gonçalves Ferreira .pdf"
+              target="_blank"
+              >Download CV</a
+            >
+            <a class="button-contact" href="#contact">Entrar em contato</a>
+          </div>
+        </div>
+        <div class="col-b">
+          <img src="./images/minhaFoto.jpg" alt="Minha foto pessoal Bruno" />
+        </div>
+      </div>
+    </section>
+
+    <!--Section - About - Sobre Mim-->
+
+    <section id="about">
+      <h1>Sobre Mim</h1>
+      <div class="wrapper">
+        <p>
+          Olá, me chamo Bruno Gonçalves, tenho 32 anos. Estou cursando superior
+          de tecnologia em Análise e Desenvolvimento de Sistemas pela Unopar de
+          Juiz de Fora-MG, onde já estudei Arquitetura de Computadores, Projetos
+          de Software, Redes, Lógica de Programação, Algoritmos e Programação
+          Estruturada, Linguagens de Programação, Mindset Ágil, Banco de Dados
+          entre outros. Em paralelo com a faculdade também comecei a estudar
+          pelo Instituiçao de ensino de programação a
+          <a href="https://www.rocketseat.com.br/" target="_black"
+            >Rocketseat</a
+          >
+          onde venho estudando as tecnologias HTML, CSS é JAVASCRIPT. Sou uma
+          pessoa muito prestativo, sempre estou tentando ajudar as pessoas da
+          melhor maneira, gosto de desafios. É depois de muitos anos procurando
+          saber qual seria a minha profissão posso dizer com toda certeza que
+          encontrei, PROGRAMADOR.
+        </p>
+      </div>
+    </section>
+
+    <!--Section - skills - Habilidades -->
+    <section id="skills">
+      <div class="wrapper">
+        <h1>Minhas skills</h1>
+
+        <div class="my-skills">
+          <div class="container-skills">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_92433_833)">
+                <path
+                  d="M2.83594 0.00012207L6.68794 43.2001L23.9739 48.0001L41.3049 43.1941L45.1629 0.00012207H2.83894H2.83594ZM36.7779 14.1301H16.5039L16.9869 19.5571H36.2979L34.8429 35.8231L23.9739 38.8351L13.1199 35.8231L12.3789 27.5011H17.6979L18.0759 31.7311L23.9769 33.3211L23.9889 33.3181L29.8929 31.7251L30.5049 24.8551H12.1419L10.7139 8.83212H37.2549L36.7809 14.1301H36.7779Z"
+                  fill="#00DF5E"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_92433_833">
+                  <rect width="48" height="48" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="container-skills">
+            <svg
+              width="42"
+              height="48"
+              viewBox="0 0 42 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_92433_829)">
+                <path
+                  d="M38.732 42.846L42.558 0H0L0.05 0.556L3.82 42.852L3.852 43.204L21.118 48H21.39L38.696 43.2L38.728 42.848L38.732 42.846ZM21.316 9.358H33.682L33.31 13.678L21.11 19.102L21.314 20.078H32.762L31.444 35.18L21.272 38L11.104 35.184L10.464 27.952H14.65L14.986 31.618L15.018 31.974L21.188 33.614H21.454L27.556 31.918L27.586 31.564L28.162 24.792L28.208 24.24H10.114L9.734 19.894L22.352 14.492L22.152 13.512H9.192L8.822 9.352H21.302L21.316 9.358Z"
+                  fill="#00DF5E"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_92433_829">
+                  <rect width="42" height="48" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="container-skills">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0H48V48H0V0ZM36.694 40.24C34.468 40.24 33.21 39.08 32.244 37.5L28.578 39.63C29.902 42.246 32.608 44.242 36.798 44.242C41.082 44.242 44.272 42.018 44.272 37.956C44.272 34.19 42.108 32.516 38.276 30.87L37.148 30.388C35.212 29.548 34.374 29.002 34.374 27.648C34.374 26.554 35.214 25.716 36.534 25.716C37.828 25.716 38.662 26.262 39.436 27.648L42.948 25.394C41.462 22.78 39.402 21.782 36.534 21.782C32.506 21.782 29.928 24.358 29.928 27.742C29.928 31.412 32.088 33.15 35.344 34.536L36.472 35.02C38.53 35.92 39.756 36.468 39.756 38.014C39.756 39.306 38.562 40.24 36.694 40.24ZM19.214 40.21C17.664 40.21 17.018 39.15 16.31 37.89L12.638 40.114C13.702 42.366 15.794 44.234 19.404 44.234C23.402 44.234 26.14 42.108 26.14 37.438V22.038H21.63V37.378C21.63 39.632 20.694 40.21 19.212 40.21H19.214Z"
+                fill="#00DF5E"
+              />
+            </svg>
+          </div>
+          <div class="container-skills">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M48 23.378C48 20.198 44.018 17.184 37.912 15.316C39.322 9.094 38.696 4.142 35.936 2.556C35.2672 2.18144 34.5103 1.9929 33.744 2.01V4.19C34.194 4.19 34.556 4.28 34.86 4.446C36.19 5.21 36.768 8.114 36.318 11.852C36.21 12.772 36.034 13.74 35.818 14.728C33.7733 14.2353 31.698 13.8792 29.606 13.662C28.3597 11.9426 27 10.3083 25.536 8.77C28.726 5.806 31.72 4.182 33.756 4.182V2C31.064 2 27.542 3.918 23.98 7.244C20.42 3.94 16.896 2.04 14.206 2.04V4.22C16.232 4.22 19.236 5.836 22.426 8.78C21.056 10.22 19.686 11.852 18.384 13.662C16.2877 13.8767 14.2087 14.2363 12.162 14.738C11.936 13.76 11.77 12.812 11.652 11.902C11.192 8.162 11.76 5.258 13.082 4.486C13.374 4.31 13.756 4.23 14.206 4.23V2.05C13.386 2.05 12.64 2.226 11.996 2.596C9.246 4.182 8.63 9.122 10.048 15.326C3.962 17.206 0 20.208 0 23.378C0 26.558 3.982 29.572 10.088 31.438C8.678 37.662 9.304 42.614 12.064 44.198C12.7 44.57 13.444 44.746 14.264 44.746C16.956 44.746 20.478 42.828 24.04 39.502C27.6 42.808 31.122 44.706 33.814 44.706C34.5862 44.7223 35.3489 44.5332 36.024 44.158C38.774 42.574 39.39 37.634 37.972 31.43C44.038 29.562 48 26.548 48 23.378ZM35.26 16.852C34.88 18.1597 34.4395 19.4491 33.94 20.716C33.1223 19.1255 32.2245 17.5775 31.25 16.078C32.64 16.284 33.98 16.538 35.262 16.852H35.26ZM30.78 27.272C30.018 28.592 29.234 29.846 28.422 31.01C25.4865 31.2687 22.5341 31.2721 19.598 31.02C17.9139 28.6144 16.4411 26.0675 15.196 23.408C16.4392 20.7422 17.9057 18.1864 19.58 15.768C22.5148 15.5087 25.4665 15.5047 28.402 15.756C29.214 16.92 30.008 18.164 30.77 19.476C31.514 20.756 32.19 22.056 32.806 23.368C32.1832 24.6959 31.5073 25.9983 30.78 27.272ZM33.94 26C34.468 27.31 34.92 28.622 35.29 29.894C34.01 30.208 32.658 30.472 31.26 30.676C32.2305 29.1628 33.1249 27.6022 33.94 26ZM24.02 36.44C23.11 35.5 22.2 34.454 21.3 33.308C22.18 33.348 23.08 33.378 23.99 33.378C24.91 33.378 25.82 33.358 26.71 33.308C25.83 34.454 24.92 35.5 24.02 36.44ZM16.74 30.676C15.3915 30.4806 14.0527 30.223 12.728 29.904C13.09 28.642 13.54 27.34 14.048 26.04C14.45 26.82 14.872 27.604 15.332 28.388C15.792 29.17 16.26 29.934 16.74 30.676ZM23.97 10.316C24.88 11.256 25.79 12.302 26.69 13.448C25.81 13.408 24.91 13.378 24 13.378C23.08 13.378 22.17 13.398 21.28 13.448C22.16 12.302 23.07 11.256 23.97 10.316ZM16.73 16.08C15.7597 17.5899 14.8653 19.1471 14.05 20.746C13.5364 19.4709 13.0859 18.1713 12.7 16.852C13.98 16.548 15.332 16.284 16.73 16.08ZM7.876 28.328C4.412 26.852 2.172 24.914 2.172 23.378C2.172 21.842 4.412 19.894 7.876 18.428C8.716 18.066 9.636 17.742 10.586 17.44C11.144 19.356 11.878 21.352 12.786 23.398C11.9287 25.3224 11.2037 27.303 10.616 29.326C9.6869 29.0383 8.77247 28.7053 7.876 28.328ZM13.14 42.308C11.81 41.548 11.232 38.64 11.682 34.904C11.79 33.984 11.966 33.014 12.182 32.026C14.098 32.496 16.192 32.858 18.394 33.094C19.6404 34.8134 21 36.4477 22.464 37.986C19.274 40.95 16.28 42.574 14.244 42.574C13.8599 42.5782 13.4807 42.4875 13.14 42.31V42.308ZM36.348 34.854C36.808 38.592 36.24 41.498 34.918 42.27C34.626 42.446 34.244 42.524 33.794 42.524C31.768 42.524 28.764 40.91 25.574 37.964C26.944 36.528 28.314 34.894 29.616 33.084C31.7123 32.8693 33.7913 32.5097 35.838 32.008C36.064 32.996 36.238 33.944 36.348 34.854ZM40.114 28.328C39.274 28.69 38.354 29.014 37.404 29.316C36.806 27.2826 36.0709 25.2921 35.204 23.358C36.104 21.324 36.826 19.338 37.374 17.43C38.344 17.732 39.262 18.066 40.124 18.428C43.588 19.904 45.828 21.842 45.828 23.378C45.818 24.914 43.578 26.862 40.114 28.328Z"
+                fill="#00DF5E"
+              />
+              <path
+                d="M23.9898 27.8498C25.1759 27.8498 26.3133 27.3786 27.152 26.5399C27.9907 25.7013 28.4618 24.5638 28.4618 23.3778C28.4618 22.1917 27.9907 21.0542 27.152 20.2156C26.3133 19.3769 25.1759 18.9058 23.9898 18.9058C22.8038 18.9058 21.6663 19.3769 20.8276 20.2156C19.989 21.0542 19.5178 22.1917 19.5178 23.3778C19.5178 24.5638 19.989 25.7013 20.8276 26.5399C21.6663 27.3786 22.8038 27.8498 23.9898 27.8498Z"
+                fill="#00DF5E"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section - Projects - Projetos-->
+    <section id="project">
+      <div class="wrapper">
+        <h1>
+          Projetos
+          <small style="font-size: 8px; color: #fff">Breve meus projetos</small>
+        </h1>
+
+        <div class="container-projects">
+          <div class="project">
+            <img src="" alt="" />
+            <h5>Titulo do projeto</h5>
+            <p>Tecnologias: HTML, CSS e JS.</p>
+            <a href="">Repositório Github</a>
+            <a href="">Página online</a>
+          </div>
+
+          <div class="project">
+            <img src="" alt="" />
+            <h5>Titulo do projeto</h5>
+            <p>Tecnologias: HTML, CSS e JS.</p>
+            <a href="">Repositório Github</a>
+            <a href="">Página online</a>
+          </div>
+
+          <div class="project">
+            <img src="" alt="" />
+            <h5>Titulo do projeto</h5>
+            <p>Tecnologias: HTML, CSS e JS.</p>
+            <a href="">Repositório Github</a>
+            <a href="">Página online</a>
+          </div>
+          <div class="project">
+            <img src="" alt="" />
+            <h5>Titulo do projeto</h5>
+            <p>Tecnologias: HTML, CSS e JS.</p>
+            <a href="">Repositório Github</a>
+            <a href="">Página online</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section - Service - Serviços -->
+    <section id="service">
+      <div class="wrapper">
+        <h1>Serviços</h1>
+        <div class="div-cards">
+          <div class="card">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.4128 30L36.4128 20L26.4128 10"
+                stroke="#00DF5E"
+                stroke-width="1.39167"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.0795 10L3.07953 20L13.0795 30"
+                stroke="#00DF5E"
+                stroke-width="1.39167"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>Criação de sites</p>
+          </div>
+          <div class="card">
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.29175 8.02067C7.29175 6.66696 7.82951 5.3687 8.78672 4.41148C9.74394 3.45426 11.0422 2.9165 12.3959 2.9165H17.5001V13.1248H12.3959C11.0422 13.1248 9.74394 12.5871 8.78672 11.6299C7.82951 10.6726 7.29175 9.37438 7.29175 8.02067Z"
+                stroke="#00DF5E"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17.5 2.9165H22.6042C23.2745 2.9165 23.9382 3.04853 24.5574 3.30504C25.1767 3.56154 25.7394 3.93751 26.2134 4.41148C26.6873 4.88545 27.0633 5.44812 27.3198 6.06739C27.5763 6.68666 27.7083 7.35038 27.7083 8.02067C27.7083 8.69096 27.5763 9.35468 27.3198 9.97395C27.0633 10.5932 26.6873 11.1559 26.2134 11.6299C25.7394 12.1038 25.1767 12.4798 24.5574 12.7363C23.9382 12.9928 23.2745 13.1248 22.6042 13.1248H17.5V2.9165Z"
+                stroke="#00DF5E"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17.5 18.2292C17.5 17.5589 17.632 16.8952 17.8885 16.2759C18.145 15.6566 18.521 15.0939 18.995 14.62C19.4689 14.146 20.0316 13.77 20.6509 13.5135C21.2702 13.257 21.9339 13.125 22.6042 13.125C23.2745 13.125 23.9382 13.257 24.5574 13.5135C25.1767 13.77 25.7394 14.146 26.2134 14.62C26.6873 15.0939 27.0633 15.6566 27.3198 16.2759C27.5763 16.8952 27.7083 17.5589 27.7083 18.2292C27.7083 18.8995 27.5763 19.5632 27.3198 20.1824C27.0633 20.8017 26.6873 21.3644 26.2134 21.8384C25.7394 22.3123 25.1767 22.6883 24.5574 22.9448C23.9382 23.2013 23.2745 23.3333 22.6042 23.3333C21.9339 23.3333 21.2702 23.2013 20.6509 22.9448C20.0316 22.6883 19.4689 22.3123 18.995 21.8384C18.521 21.3644 18.145 20.8017 17.8885 20.1824C17.632 19.5632 17.5 18.8995 17.5 18.2292V18.2292Z"
+                stroke="#00DF5E"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7.29175 28.4377C7.29175 27.084 7.82951 25.7857 8.78672 24.8285C9.74394 23.8713 11.0422 23.3335 12.3959 23.3335H17.5001V28.4377C17.5001 29.7914 16.9623 31.0896 16.0051 32.0469C15.0479 33.0041 13.7496 33.5418 12.3959 33.5418C11.0422 33.5418 9.74394 33.0041 8.78672 32.0469C7.82951 31.0896 7.29175 29.7914 7.29175 28.4377Z"
+                stroke="#00DF5E"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7.29175 18.2292C7.29175 16.8755 7.82951 15.5772 8.78672 14.62C9.74394 13.6628 11.0422 13.125 12.3959 13.125H17.5001V23.3333H12.3959C11.0422 23.3333 9.74394 22.7956 8.78672 21.8384C7.82951 20.8811 7.29175 19.5829 7.29175 18.2292Z"
+                stroke="#00DF5E"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <p>UI Designer</p>
+          </div>
+          <div class="card">
+            <svg
+              width="39"
+              height="39"
+              viewBox="0 0 39 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M27.6251 3.25006H11.3751C9.58014 3.25006 8.12506 4.70514 8.12506 6.50006V32.5001C8.12506 34.295 9.58014 35.7501 11.3751 35.7501H27.6251C29.42 35.7501 30.8751 34.295 30.8751 32.5001V6.50006C30.8751 4.70514 29.42 3.25006 27.6251 3.25006Z"
+                stroke="#00DF5E"
+                stroke-width="1.39286"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19.5 29.25H19.5171"
+                stroke="#00DF5E"
+                stroke-width="1.39286"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>Sites responsivos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section - Contact - Contatos-->
+    <section id="contact">
+      <h1>Contato</h1>
+      <div class="wrapper">
+        <div class="col-a">
+          <div class="contacts">
+            <div class="name">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#00DF5E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14"
+                    stroke="#00DF5E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 9H9.01"
+                    stroke="#00DF5E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 9H15.01"
+                    stroke="#00DF5E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3>Meu nome</h3>
+              <p>Bruno Gonçalves</p>
+            </div>
+            <div class="email">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.00012 4.00006H20.0001C21.1001 4.00006 22.0001 4.90006 22.0001 6.00006V18.0001C22.0001 19.1001 21.1001 20.0001 20.0001 20.0001H4.00012C2.90012 20.0001 2.00012 19.1001 2.00012 18.0001V6.00006C2.00012 4.90006 2.90012 4.00006 4.00012 4.00006Z"
+                    stroke="#00DF5E"
+                    stroke-width="1.47675"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22.0002 5.99951L12.0002 12.9995L2.00024 5.99951"
+                    stroke="#00DF5E"
+                    stroke-width="1.47675"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3>Email</h3>
+              <p>brunogonferreira@gmail.com</p>
+            </div>
+            <div class="instagram">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
+                    stroke="#00DF5E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 11.3698C16.1234 12.2021 15.9812 13.052 15.5937 13.7988C15.2062 14.5456 14.5931 15.1512 13.8416 15.5295C13.0901 15.9077 12.2384 16.0394 11.4077 15.9057C10.5771 15.7721 9.80971 15.3799 9.21479 14.785C8.61987 14.1901 8.22768 13.4227 8.09402 12.592C7.96035 11.7614 8.09202 10.9097 8.47028 10.1582C8.84854 9.40667 9.45414 8.79355 10.2009 8.40605C10.9477 8.01856 11.7977 7.8764 12.63 7.99981C13.4789 8.1257 14.2648 8.52128 14.8716 9.12812C15.4785 9.73496 15.8741 10.5209 16 11.3698Z"
+                    stroke="#00DF5E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 6.5H17.51"
+                    stroke="#00DF5E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3>Instagram</h3>
+              <a
+                href="https://www.instagram.com/brunogonferreira/"
+                target="_black"
+                >@brunogonferreira</a
+              >
+            </div>
+            <div class="phone">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.0001 16.9202V19.9202C22.0012 20.1987 21.9441 20.4743 21.8326 20.7295C21.721 20.9847 21.5574 21.2137 21.3521 21.402C21.1469 21.5903 20.9046 21.7336 20.6408 21.8229C20.377 21.9121 20.0974 21.9452 19.8201 21.9202C16.7429 21.5858 13.7871 20.5343 11.1901 18.8502C8.77388 17.3148 6.72539 15.2663 5.19006 12.8502C3.50003 10.2414 2.4483 7.27115 2.12006 4.18016C2.09507 3.90363 2.12793 3.62492 2.21656 3.36178C2.30518 3.09865 2.44763 2.85685 2.63482 2.65178C2.82202 2.44671 3.04986 2.28287 3.30385 2.17068C3.55783 2.05849 3.8324 2.00042 4.11006 2.00016H7.11006C7.59536 1.99538 8.06585 2.16724 8.43382 2.48369C8.80179 2.80014 9.04213 3.2396 9.11005 3.72016C9.23668 4.68022 9.47151 5.62289 9.81006 6.53016C9.9446 6.88808 9.97372 7.27707 9.89396 7.65104C9.81421 8.025 9.62892 8.36827 9.36005 8.64016L8.09006 9.91016C9.51361 12.4137 11.5865 14.4866 14.0901 15.9102L15.3601 14.6402C15.6319 14.3713 15.9752 14.186 16.3492 14.1063C16.7231 14.0265 17.1121 14.0556 17.4701 14.1902C18.3773 14.5287 19.32 14.7635 20.2801 14.8902C20.7658 14.9587 21.2095 15.2034 21.5266 15.5777C21.8437 15.9519 22.0122 16.4297 22.0001 16.9202Z"
+                    stroke="#00DF5E"
+                    stroke-width="1.48312"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3>Telefone</h3>
+              <p>(32) 9 9813-9420</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <form
+            action="https://formsubmit.co/brunogonferreira@gmail.com"
+            method="POST"
+          >
+            <h3>Mande sua mensagem:</h3>
+            <input type="text" placeholder="Digite seu nome..." />
+            <input type="text" placeholder="Assunto..." />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Seu email..."
+            />
+            <textarea
+              name="messege"
+              id="area-messege"
+              cols="30"
+              rows="10"
+              placeholder="Escreva sua mensagem..."
+            ></textarea>
+            <button type="submit">Enviar</button>
+
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5501/emailSend.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer - Rodapé-->
+    <footer>
+      <div class="wrapper">
+        <p>
+          Desenvolvido pelo <span>Bruno Gonçalves Ferreira </span> &COPY; 2022
+        </p>
+        <p>Todos direitos reservados</p>
+      </div>
+    </footer>
+
+    <!--Button voltar pra cima-->
+    <a id="backToTopButton" href="#navigation">
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="20" cy="20" r="20" fill="#00856F" />
+        <path
+          d="M20 27V13"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M13 20L20 13L27 20"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+
+    <!--File Javascript-->
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>
