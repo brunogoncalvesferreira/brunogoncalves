@@ -1,4 +1,4 @@
-# Meu Portfolio pessoal
+# Meu Portfólio pessoal
 
 <h4 align="left"> 
 	🚧  Projeto 🚀 Em construção...  🚧
@@ -21,7 +21,7 @@ As seguintes ferramentas que estão sendo usadas na construção do projeto:
 <br/>
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/74840490?v=4" width="100px;" alt=""/>
 
-<p align="left" style="background:none">
+<p align="left" style="background:none, border-radius: 50%;">
   <a href="https://www.instagram.com/brunogonferreira/" target="_blank">
  <img align="center" src="https://img.shields.io/badge/-brunogonferreira-05122A?style=flat&logo=instagram" alt="instagram"/>
 </a>
