@@ -499,30 +499,27 @@ section#home .contact {
   text-align: center;
 }
 
-#contact .name,
-.phone,
-.email,
-.instagram {
+
+#contact .contacts {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
-  width: 40%;
+  gap: 1.5rem;
 }
 
-#contact div.name div,
-#contact div.phone div,
-#contact div.email div,
-#contact div.instagram div {
-  background: var(--gray-400--);
-  width: 2.81rem;
-  height: 2.81rem;
-
-  border-radius: 50%;
-
+#contact .email {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+
+#contact .contacts .instagram svg {
+  fill: var(--green-light--);
+}
+
+#contact .contacts .linkedin svg {
+  fill: var(--green-light--);
+}
+#contact .contacts .email svg {
+  fill: var(--green-light--);
 }
 
 #contact h3 {
