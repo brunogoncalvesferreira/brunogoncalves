@@ -7,7 +7,7 @@
 
 /* =========== Colors ===========*/
 :root {
-  --hue--: 150;
+  --hue--: 544;
   --green-light--: hsl(var(--hue--), 100%, 44%);
   --white--: hsl(var(--hue--), 0%, 98%);
   --gray-200--: hsl(var(--hue--), 0%, 20%);
