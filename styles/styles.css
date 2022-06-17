@@ -20,6 +20,7 @@
 html {
   font-family: 'dm sans';
   scroll-behavior: smooth;
+  font-size: 90%;
 }
 
 body {
